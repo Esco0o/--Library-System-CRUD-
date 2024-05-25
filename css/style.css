@@ -1,0 +1,121 @@
+*
+{
+    font-family: "PT Sans Caption", sans-serif;
+
+}
+
+
+body
+{
+    background-color: #F7ECDE;
+}
+
+h1
+{
+    font-family: "Pacifico", cursive;
+    font-size: 50px;
+    position: relative;
+    
+        
+}
+
+h1::before
+{
+    content: "";
+    position: absolute;
+    background-color: #FEC260;
+    width: 100%;
+    height: 25%;
+    left: 0;
+    z-index: -1;
+    bottom: 10px;
+    transition: .5s;
+}
+
+h1:hover::before
+{
+   
+    height: 50%;
+   
+}
+
+
+@media(max-width:678px)
+{
+    h1
+{
+    font-family: "Pacifico", cursive;
+    font-size: 50px;
+    
+    
+}
+}
+
+.brdr
+{
+    border: black dotted 2px;
+    width: 90%;
+    margin-top: 4rem;
+}
+
+.title
+{
+    font-size: 25px;
+}
+
+.title p
+{
+    color:#53A658;
+    background-image: linear-gradient(100deg , #46A65B , #A3AB4C);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+     font-family: "Righteous", sans-serif; 
+}
+
+@media(max-width:678px)
+{
+    .title 
+    {
+        font-size: 22px;
+    }
+}
+
+.title .i1{
+    color: #46A65B;
+}
+
+.title .i2
+{
+    color:#A3AB4C ;
+}
+
+input:focus
+{
+    box-shadow: 6px 0 0.5rem #FEC260 ;
+    border: 1px solid #FEC260  ;
+}
+
+.form button
+{
+   background-color: #D1512D ;
+}
+
+.form button:hover
+{
+ background-color: #b8401e;
+}
+
+.btn-info{
+    background-color: #9EB23B;
+    border: none;
+}
+
+.btn-info:hover
+{
+    background-color: #8da031;
+}
+
+input #search:focus
+{
+    box-shadow: #FEC260;
+}
